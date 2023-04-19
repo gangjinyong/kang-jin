@@ -15,7 +15,7 @@ let tabs = document.querySelectorAll(".task-tabs div");
 let taskList = [];
 let mode = 'all';
 let filterList = [];
-addButton.addEventListener("mousedown",addTask);
+addButton.addEventListener("click",addTask);
 
 for(let i=1;i<tabs.length;i++){
     tabs[i].addEventListener("click",function(event){filter(event)});

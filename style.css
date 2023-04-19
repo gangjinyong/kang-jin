@@ -48,28 +48,8 @@ body{
     text-decoration: line-through;
 }
 
-.button-ch{
-    background-color: white;
-    width: 5em;
-    height: 100%;
-    border: none;
-    color: green;
-    margin: 0;
-}
-.button-ch:hover{
-    background-color: greenyellow;
-}
-.button-de{
-    background-color: white;
-    width: 5em;
-    height: 100%;
-    border: none;
-    color: red;
-    margin: 0;
-}
-.button-de:hover{
-    background-color: rgb(255, 0, 0, 0.3);;
-}
+
+
 
 .task-tabs div{
     cursor:pointer;
