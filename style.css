@@ -1,56 +1,94 @@
-body{
-    margin:0; /*기본적으로 8px이 들어가 있기 때문에 초기화 */
-    background-image: url("이미지/1.jpg"); 
-    /* 배경화면 설정 */
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Courier New', Courier, monospace;
+body {
+  margin: 0; /*기본적으로 8px이 들어가 있기 때문에 초기화 */
+  background-image: url("/이미지/todo3");
+  /* 배경화면 설정 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
 }
-.container{
-    background-color: white;
-    min-height:100vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-top: 15px solid blanchedalmond;
-    border-bottom: 15px solid blanchedalmond;
-    
-
+.container {
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-top: 15px solid blanchedalmond;
+  border-bottom: 15px solid blanchedalmond;
 }
 .input-area {
-    position: relative;
-  }
-.task-area{
-    border:1px solid lightblue;
+  position: relative;
 }
-.task-tabs{
-    display:flex;
-    border-bottom:1px solid lightblue;
-    position: relative;
+.task-area {
+  border: 1px solid lightblue;
 }
-.task-tabs div{
-    padding:1em;
+.task-tabs {
+  display: flex;
+  border-bottom: 1px solid lightblue;
+  position: relative;
 }
-#under-line{
-    height: 4px;
-    background-color: blue;
-    position: absolute;
-    width:80px;
-    left:0px;
-    top:52px;
-    padding:0px;
+.task-tabs div {
+  padding: 1em;
 }
-.task{
-    display:flex;
-    justify-content: space-between;
-    padding:1.5em;
+#under-line {
+  height: 4px;
+  background-color: blue;
+  position: absolute;
+  width: 80px;
+  left: 0px;
+  top: 52px;
+  padding: 0px;
 }
-
-.task-done{
-    text-decoration: line-through;
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  align-items: center;
+  border-bottom: 1px solid lightblue;
 }
 
+.task-done {
+  text-decoration: line-through;
+}
 
-
-
-.task-tabs div{
-    cursor:pointer;
+.task-tabs div {
+  cursor: pointer;
+}
+.fa-trash {
+  color: red;
+}
+.task button {
+  padding: 0.7em;
+  margin: 0px;
+  width: 8em;
+  height: 5em;
+  border: none;
+  background-color: white;
+}
+.fa-check {
+  color: blueviolet;
+}
+.task button:hover {
+  background-color: blanchedalmond;
+}
+.fa-undo-alt {
+  color: blueviolet;
+}
+#task-input {
+  width: 40em;
+  height: 3em;
+  border: none;
+}
+#task-input:focus {
+  outline: none;
+}
+#add-button {
+  padding: 0.6em 1.5em;
+  border: none;
+  background-color: transparent;
+}
+#add-button:hover {
+  background-color: blanchedalmond;
+}
+.fa-plus {
+  font-size: 1.2em;
 }
