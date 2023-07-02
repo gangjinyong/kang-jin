@@ -92,3 +92,90 @@ body {
 .fa-plus {
   font-size: 1.2em;
 }
+/* 모바일 화면에 대한 스타일 */
+@media (max-width: 767px) {
+  /* .container의 너비를 조정 */
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* 할 일 입력 영역 */
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  /* 할 일 입력란의 너비를 조정 */
+  #task-input {
+    width: 100%;
+  }
+
+  /* 할 일 추가 버튼의 스타일 조정 */
+  #add-button {
+    margin-top: 10px;
+  }
+
+  /* 할 일 탭의 스타일을 수직으로 정렬 */
+  .task-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 할 일 탭 간의 간격을 늘림 */
+  .task-tabs div {
+    margin-bottom: 5px;
+  }
+
+  /* 할 일 목록의 스타일 조정 */
+  .task {
+    padding: 10px;
+  }
+
+  /* 할 일 목록의 너비를 조정 */
+  #task-board {
+    width: 100%;
+  }
+}
+
+/* 태블릿 및 데스크톱 화면에 대한 스타일 */
+@media (min-width: 768px) {
+  /* .container의 너비를 조정 */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* 할 일 입력 영역 */
+  .input-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  /* 할 일 입력란의 너비를 조정 */
+  #task-input {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  /* 할 일 추가 버튼의 스타일 조정 */
+  #add-button {
+    width: 30%;
+  }
+
+  /* 할 일 탭의 스타일을 수평으로 정렬 */
+  .task-tabs {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 할 일 목록의 스타일 조정 */
+  .task {
+    padding: 20px;
+  }
+}
