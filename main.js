@@ -16,8 +16,8 @@ let taskList = [];
 let mode = "all";
 let filterList = [];
 addButton.addEventListener("click", addTask);
-taskInput.addEventListener("keydown", function (event) {
-  if (event.key == "Enter") {
+document.addEventListener("keydown", function (event) {
+  if (event.key == "Enter" && event.target === taskInput) {
     addTask();
   }
 }); // Enter 이벤트 추가
