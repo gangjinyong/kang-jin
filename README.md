@@ -1,6 +1,5 @@
 # todo list 앱
-![image](![1-horz](https://github.com/kangjinyong2/todo-list/assets/66777943/78e4a1cb-8cb8-4779-b9c6-41ebda32edc4)
-)
+![image] (![1-horz](https://github.com/kangjinyong2/todo-list/assets/66777943/3ed9becd-e2ca-45d7-90c5-1d5c77a30581)
 )
 해야 할일을 추가,삭제,완료 기능으로 메모하는 앱 입니다.
 * 사이트:https://dashing-cucurucho-72bfa9.netlify.app/
