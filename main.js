@@ -16,14 +16,16 @@ let taskList = [];
 let mode = "all";
 let filterList = [];
 addButton.addEventListener("click", addTask);
-document
-  .getElementById("task-input")
-  .addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault(); // 기본 Enter 키 동작 취소
-      addTask();
-    }
-  }); // Enter 이벤트 추가
+window.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("task-input")
+    .addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // 기본 Enter 키 동작 취소
+        addTask();
+      }
+    });
+}); // Enter 이벤트 추가
 
 for (let i = 1; i < tabs.length; i++) {
   tabs[i].addEventListener("click", function (event) {
