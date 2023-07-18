@@ -7,7 +7,7 @@
 //3.flase면 안끝난걸로 간주 그대로
 // 진행중 끝남 탭을 누르면 , 언더바가 이동
 // 끝남탭은 , 끝난 아이템만, 진행중탭은 진행중인 아이템만
-// 전체탭을 누르면 다시 전체아이템으로 돌아옴
+// 전체탭을 누르면 다시 전체아이템으로 돌아옴.
 
 let taskInput = document.getElementById("task-input");
 let addButton = document.getElementById("add-button");
