@@ -16,6 +16,7 @@ let taskList = [];
 let mode = "all";
 let filterList = [];
 addButton.addEventListener("click", addTask);
+taskInput.addEventListener("focus", () => (taskInput.value = ""));
 window.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("task-input")
@@ -89,6 +90,12 @@ function deleteTask(id) {
   for (let i = 0; i < taskList.length; i++) {
     if (taskList[i].id == id) {
       taskList.splice(i, 1);
+      break;
+    }
+  }
+  for (let i = 0; i < filterList.length; i++) {
+    if (filterList[i].id == id) {
+      filterList.splice(i, 1);
       break;
     }
   }
